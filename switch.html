@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+
+<body>
+    <h2>basic syntax</h2>
+    <pre>
+        switch(variable){
+            case 1:
+                ...action to be performed...
+                break
+                case2:
+                ....action to be performed....
+                break
+                default:
+                ....action to be performed...
+        }
+    </pre>
+    <script>
+        switch (new Date().getDay()) {
+            case 0:
+                document.write('Sunday')
+                break
+            case 1:
+                document.write('monday')
+                break
+            case 2:
+                document.write('tuesday')
+                break
+            case 3:
+                document.write('wednesday')
+                break
+            case 4:
+                document.write('thursday')
+                break
+            case 5:
+                document.write('friday')
+                break
+            case 6:
+                document.write('saturday')
+                break
+            default:    
+                document.write('invalid number')
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+
+<body>
+    <form onsubmit="return validform()">
+        <label for="firstname">FirstName</label><br>
+        <input type="text" name="fname" id="firstname" onkeyup="fnameValidate()">
+        <span id="fnameMsg"></span>
+        <br><br>
+        <label for="lastname">LastName</label><br>
+        <input type="text" name="lname" id="lastname" onkeyup="lnameValidate()">
+        <span id="lnameMsg"></span>
+        <br><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" onkeyup="emailValidate()">
+        <span id="emailMsg"></span>
+        <br><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" onkeyup="passwordValidate()">
+        <span id="passMsg"></span>
+        <br><br>
+
+        <input type="submit" name="submit" value="Register">
+
+    </form>
+    <script src="formvalidation.js"></script>
+</body>
+</html>
